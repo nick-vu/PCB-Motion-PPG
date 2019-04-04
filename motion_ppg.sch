@@ -443,8 +443,6 @@ Text Label 8750 10100 0    60   ~ 0
 SDI
 Text Label 8750 9900 0    60   ~ 0
 SCL
-Text GLabel 10800 9900 2    60   Input ~ 0
-DVDD
 $Comp
 L Device:R R11
 U 1 1 59860BBD
@@ -1401,8 +1399,6 @@ Wire Wire Line
 Wire Wire Line
 	10850 12050 11150 12050
 Connection ~ 10850 12050
-Text GLabel 11150 12050 2    60   Input ~ 0
-DVDD
 Text GLabel 11150 11550 2    60   Input ~ 0
 DGND
 Connection ~ 10850 11550
@@ -1514,4 +1510,8 @@ F 3 "" H 10650 3000 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	10650 3050 10650 3000
+Text GLabel 10800 9900 2    50   Input ~ 0
+1.8V
+Text GLabel 11150 12050 2    50   Input ~ 0
+1.8V
 $EndSCHEMATC
