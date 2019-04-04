@@ -1,0 +1,51 @@
+(module QFN40P300X300X105-25N-D (layer F.Cu)
+  (descr "QFN-24")
+  (tags "Integrated Circuit")
+  (attr smd)
+  (fp_text reference IC** (at 0 0) (layer F.SilkS)
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (fp_text value QFN40P300X300X105-25N-D (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (fp_line (start -2.125 -2.125) (end 2.125 -2.125) (layer Dwgs.User) (width 0.05))
+  (fp_line (start 2.125 -2.125) (end 2.125 2.125) (layer Dwgs.User) (width 0.05))
+  (fp_line (start 2.125 2.125) (end -2.125 2.125) (layer Dwgs.User) (width 0.05))
+  (fp_line (start -2.125 2.125) (end -2.125 -2.125) (layer Dwgs.User) (width 0.05))
+  (fp_line (start -1.5 -1.5) (end 1.5 -1.5) (layer Dwgs.User) (width 0.1))
+  (fp_line (start 1.5 -1.5) (end 1.5 1.5) (layer Dwgs.User) (width 0.1))
+  (fp_line (start 1.5 1.5) (end -1.5 1.5) (layer Dwgs.User) (width 0.1))
+  (fp_line (start -1.5 1.5) (end -1.5 -1.5) (layer Dwgs.User) (width 0.1))
+  (fp_line (start -1.5 -1.1) (end -1.1 -1.5) (layer Dwgs.User) (width 0.1))
+  (fp_circle (center -1.875 -1.6) (end -1.875 -1.5) (layer F.SilkS) (width 0.2))
+Sh "1" rect 0.2 0.75 0 0 90
+Sh "2" rect 0.2 0.75 0 0 90
+Sh "3" rect 0.2 0.75 0 0 90
+Sh "4" rect 0.2 0.75 0 0 90
+Sh "5" rect 0.2 0.75 0 0 90
+Sh "6" rect 0.2 0.75 0 0 90
+Sh "7" rect 0.2 0.75 0 0 0
+Sh "8" rect 0.2 0.75 0 0 0
+Sh "9" rect 0.2 0.75 0 0 0
+Sh "10" rect 0.2 0.75 0 0 0
+Sh "11" rect 0.2 0.75 0 0 0
+Sh "12" rect 0.2 0.75 0 0 0
+Sh "13" rect 0.2 0.75 0 0 90
+Sh "14" rect 0.2 0.75 0 0 90
+Sh "15" rect 0.2 0.75 0 0 90
+Sh "16" rect 0.2 0.75 0 0 90
+Sh "17" rect 0.2 0.75 0 0 90
+Sh "18" rect 0.2 0.75 0 0 90
+Sh "19" rect 0.2 0.75 0 0 0
+Sh "20" rect 0.2 0.75 0 0 0
+Sh "21" rect 0.2 0.75 0 0 0
+Sh "22" rect 0.2 0.75 0 0 0
+Sh "23" rect 0.2 0.75 0 0 0
+Sh "24" rect 0.2 0.75 0 0 0
+Sh "25" rect 1.59 1.75 0 0 0
+  (model ICM-20948.stp
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)
