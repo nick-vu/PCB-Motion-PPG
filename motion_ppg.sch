@@ -140,25 +140,12 @@ Text Notes 6050 900  0    60   ~ 0
 Voltage Regulation Circuit
 Text Label 2300 5650 0    60   ~ 0
 BATT_IN
-Text Label 3650 8200 0    60   ~ 0
-BIASIN
 Text Notes 1150 6300 0    60   ~ 0
 Vcc = Raw battery signal
 Text Label 2550 6650 0    60   ~ 0
 SWDIO
 Text GLabel 6650 2200 0    60   Input ~ 0
 DVDD
-$Comp
-L Device:R R6
-U 1 1 58A9794D
-P 4450 8200
-F 0 "R6" V 4530 8200 50  0000 C CNN
-F 1 "1MΩ" V 4450 8200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 4380 8200 50  0001 C CNN
-F 3 "" H 4450 8200 50  0000 C CNN
-	1    4450 8200
-	0    1    1    0   
-$EndComp
 Text Label 4850 5450 2    60   ~ 0
 IN2
 Text Label 4850 5250 2    60   ~ 0
@@ -976,8 +963,6 @@ Wire Wire Line
 Wire Wire Line
 	26400 5350 26700 5350
 Wire Wire Line
-	3650 8200 4300 8200
-Wire Wire Line
 	10000 1800 10000 2450
 Wire Wire Line
 	9700 2450 10000 2450
@@ -1256,398 +1241,6 @@ Wire Wire Line
 	3350 1800 3650 1800
 Wire Wire Line
 	3350 1450 4100 1450
-Text Label 6550 10850 2    60   ~ 0
-SPI_~CS
-Text Label 6650 10650 2    60   ~ 0
-SPI_SCLK
-Text Label 6600 10750 2    60   ~ 0
-DIN
-Text Label 6750 10550 2    60   ~ 0
-DOUT
-$Comp
-L Device:R R?
-U 1 1 5C4D2CFF
-P 2000 10950
-F 0 "R?" V 2080 10950 50  0000 C CNN
-F 1 "30k" V 2000 10950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1930 10950 50  0001 C CNN
-F 3 "" H 2000 10950 50  0000 C CNN
-	1    2000 10950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C4D2D05
-P 2000 10500
-F 0 "R?" V 2080 10500 50  0000 C CNN
-F 1 "30k" V 2000 10500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1930 10500 50  0001 C CNN
-F 3 "" H 2000 10500 50  0000 C CNN
-	1    2000 10500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C4D2D0B
-P 4250 12500
-F 0 "C?" H 4250 12600 40  0000 L CNN
-F 1 "10uF" H 4256 12415 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4288 12350 30  0001 C CNN
-F 3 "~" H 4250 12500 60  0000 C CNN
-	1    4250 12500
-	0    1    1    0   
-$EndComp
-Text Label 1250 10500 0    60   ~ 0
-IN1
-Text Label 1250 10950 0    60   ~ 0
-IN2
-$Comp
-L Device:C C?
-U 1 1 5C4D2D13
-P 4450 8700
-F 0 "C?" H 4450 8800 40  0000 L CNN
-F 1 "1.0nF-1.5nF" H 4456 8615 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4488 8550 30  0001 C CNN
-F 3 "~" H 4450 8700 60  0000 C CNN
-	1    4450 8700
-	0    1    1    0   
-$EndComp
-Text Label 6550 11150 2    60   ~ 0
-~PWDN/RESET
-$Comp
-L Device:R R?
-U 1 1 5C4D2D1A
-P 2000 10750
-F 0 "R?" V 2080 10750 50  0000 C CNN
-F 1 "30k" V 2000 10750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1930 10750 50  0001 C CNN
-F 3 "" H 2000 10750 50  0000 C CNN
-	1    2000 10750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C4D2D20
-P 2000 10300
-F 0 "R?" V 2080 10300 50  0000 C CNN
-F 1 "30k" V 2000 10300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1930 10300 50  0001 C CNN
-F 3 "" H 2000 10300 50  0000 C CNN
-	1    2000 10300
-	0    1    1    0   
-$EndComp
-Text Label 1250 10750 0    60   ~ 0
-IN2-
-Text Label 1250 10300 0    60   ~ 0
-IN1-
-$Comp
-L ExG_ADS1292_v4-rescue:ADS1291_2-RESCUE-EEG_ADS1299_2 U?
-U 1 1 5C4D2D29
-P 4600 10600
-F 0 "U?" H 4600 10400 60  0000 C CNN
-F 1 "ADS1291/2" H 4600 10650 60  0000 C CNN
-F 2 "" H 4700 10600 60  0001 C CNN
-F 3 "" H 4700 10600 60  0000 C CNN
-	1    4600 10600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C4D2D2F
-P 3000 10050
-F 0 "C?" H 3000 10150 40  0000 L CNN
-F 1 "4.7 nF" H 3006 9965 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3038 9900 30  0001 C CNN
-F 3 "~" H 3000 10050 60  0000 C CNN
-	1    3000 10050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C4D2D35
-P 3200 11150
-F 0 "C?" H 3200 11250 40  0000 L CNN
-F 1 "4.7 nF" H 3206 11065 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3238 11000 30  0001 C CNN
-F 3 "~" H 3200 11150 60  0000 C CNN
-	1    3200 11150
-	1    0    0    -1  
-$EndComp
-Text GLabel 3900 8900 0    60   Input ~ 0
-DVDD
-Text GLabel 6950 11050 2    60   Input ~ 0
-DVDD
-Text GLabel 6150 11600 2    60   Input ~ 0
-DGND
-Text GLabel 6650 10250 2    60   Input ~ 0
-DGND
-$Comp
-L Device:C C?
-U 1 1 5C4D2D3F
-P 6100 10050
-F 0 "C?" H 6100 10150 40  0000 L CNN
-F 1 "0.1uF" H 6106 9965 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 6138 9900 30  0001 C CNN
-F 3 "~" H 6100 10050 60  0000 C CNN
-	1    6100 10050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C4D2D45
-P 6450 10050
-F 0 "C?" H 6450 10150 40  0000 L CNN
-F 1 "1uF" H 6456 9965 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 6488 9900 30  0001 C CNN
-F 3 "~" H 6450 10050 60  0000 C CNN
-	1    6450 10050
-	1    0    0    -1  
-$EndComp
-Text GLabel 6700 9750 2    60   Input ~ 0
-DVDD
-Text Label 6850 10450 2    60   ~ 0
-~DRDY
-NoConn ~ 5800 10950
-NoConn ~ 5000 9400
-NoConn ~ 4850 9400
-$Comp
-L Device:C C?
-U 1 1 5C4D2D50
-P 5350 12300
-F 0 "C?" H 5350 12400 40  0000 L CNN
-F 1 "1uF" H 5356 12215 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 5388 12150 30  0001 C CNN
-F 3 "~" H 5350 12300 60  0000 C CNN
-	1    5350 12300
-	1    0    0    -1  
-$EndComp
-Text GLabel 4500 12850 0    60   Input ~ 0
-DVDD
-$Comp
-L Device:C C?
-U 1 1 5C4D2D57
-P 4250 12150
-F 0 "C?" H 4250 12250 40  0000 L CNN
-F 1 "0.1uF" H 4256 12065 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4288 12000 30  0001 C CNN
-F 3 "~" H 4250 12150 60  0000 C CNN
-	1    4250 12150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1 C?
-U 1 1 5C4D2D5D
-P 5000 12300
-F 0 "C?" H 5025 12400 50  0000 L CNN
-F 1 "1uF" H 5025 12200 50  0000 L CNN
-F 2 "" H 5000 12300 50  0001 C CNN
-F 3 "" H 5000 12300 50  0000 C CNN
-	1    5000 12300
-	1    0    0    -1  
-$EndComp
-Text GLabel 5650 12650 2    60   Input ~ 0
-DGND
-$Comp
-L Device:C C?
-U 1 1 5C4D2D64
-P 4700 12050
-F 0 "C?" H 4700 12150 40  0000 L CNN
-F 1 "0.1uF" H 4706 11965 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4738 11900 30  0001 C CNN
-F 3 "~" H 4700 12050 60  0000 C CNN
-	1    4700 12050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C4D2D6A
-P 4700 12300
-F 0 "C?" H 4700 12400 40  0000 L CNN
-F 1 "1uF" H 4706 12215 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4738 12150 30  0001 C CNN
-F 3 "~" H 4700 12300 60  0000 C CNN
-	1    4700 12300
-	0    1    1    0   
-$EndComp
-Text GLabel 5650 8950 2    60   Input ~ 0
-DGND
-Wire Wire Line
-	2150 10950 2800 10950
-Wire Wire Line
-	2500 10500 2150 10500
-Wire Wire Line
-	1850 10950 1250 10950
-Wire Wire Line
-	1850 10500 1250 10500
-Wire Wire Line
-	2150 10750 2650 10750
-Wire Wire Line
-	2150 10300 2600 10300
-Wire Wire Line
-	1850 10300 1250 10300
-Wire Wire Line
-	1850 10750 1250 10750
-Wire Wire Line
-	4100 9400 4100 8900
-Wire Wire Line
-	3900 8900 4100 8900
-Wire Wire Line
-	4200 8900 4200 9400
-Connection ~ 4100 8900
-Wire Wire Line
-	3400 9850 3000 9850
-Wire Wire Line
-	2600 10450 3400 10450
-Wire Wire Line
-	2600 10300 2600 10450
-Wire Wire Line
-	3400 10550 2500 10550
-Wire Wire Line
-	2500 10550 2500 10500
-Wire Wire Line
-	3400 10650 2650 10650
-Wire Wire Line
-	2650 10650 2650 10750
-Wire Wire Line
-	2800 10950 2800 10750
-Wire Wire Line
-	2800 10750 3400 10750
-Wire Wire Line
-	3400 10250 3000 10250
-Wire Wire Line
-	3000 10250 3000 10200
-Wire Wire Line
-	3000 9850 3000 9900
-Wire Wire Line
-	3400 10950 3200 10950
-Wire Wire Line
-	3200 10950 3200 11000
-Wire Wire Line
-	3400 11350 3200 11350
-Wire Wire Line
-	3200 11350 3200 11300
-Wire Wire Line
-	5800 10450 6850 10450
-Wire Wire Line
-	5800 10550 6750 10550
-Wire Wire Line
-	5800 10650 6650 10650
-Wire Wire Line
-	5800 10750 6600 10750
-Wire Wire Line
-	5800 10850 6550 10850
-Wire Wire Line
-	5800 11150 6550 11150
-Wire Wire Line
-	5800 11050 6950 11050
-Wire Wire Line
-	5800 11250 6150 11250
-Wire Wire Line
-	6150 11250 6150 11600
-Wire Wire Line
-	5800 10250 6100 10250
-Wire Wire Line
-	5800 9950 5800 9750
-Wire Wire Line
-	5800 9750 6100 9750
-Wire Wire Line
-	6100 9750 6100 9900
-Wire Wire Line
-	6100 10200 6100 10250
-Connection ~ 6100 10250
-Wire Wire Line
-	6450 10250 6450 10200
-Connection ~ 6450 10250
-Wire Wire Line
-	6450 9750 6450 9900
-Connection ~ 6100 9750
-Connection ~ 6450 9750
-Wire Wire Line
-	4450 9400 4450 9100
-Wire Wire Line
-	4450 9100 4300 9100
-Connection ~ 4300 9100
-Connection ~ 4600 8700
-Wire Wire Line
-	5000 11800 5000 12150
-Wire Wire Line
-	5150 11800 5150 12000
-Wire Wire Line
-	5150 12000 5350 12000
-Wire Wire Line
-	5350 12000 5350 12150
-Wire Wire Line
-	4100 11800 4100 12150
-Wire Wire Line
-	4400 11800 4400 12150
-Connection ~ 4400 12150
-Connection ~ 4100 12150
-Wire Wire Line
-	5000 12450 5000 12650
-Wire Wire Line
-	5350 12650 5350 12450
-Wire Wire Line
-	4400 12650 4850 12650
-Connection ~ 5000 12650
-Connection ~ 4400 12500
-Connection ~ 5350 12650
-Wire Wire Line
-	4550 11800 4550 12050
-Wire Wire Line
-	4850 11800 4850 12050
-Connection ~ 4550 12050
-Connection ~ 4850 12050
-Wire Wire Line
-	4550 12850 4500 12850
-Connection ~ 4550 12300
-Connection ~ 4850 12650
-Connection ~ 4850 12300
-Wire Wire Line
-	5200 9500 5200 8950
-Wire Wire Line
-	5200 8950 5650 8950
-Wire Wire Line
-	4100 8900 4200 8900
-Wire Wire Line
-	6100 10250 6450 10250
-Wire Wire Line
-	6450 10250 6650 10250
-Wire Wire Line
-	6100 9750 6450 9750
-Wire Wire Line
-	6450 9750 6700 9750
-Wire Wire Line
-	4300 9100 4300 9400
-Wire Wire Line
-	4300 8700 4300 9100
-Wire Wire Line
-	4600 8700 4600 9400
-Wire Wire Line
-	4400 12150 4400 12500
-Wire Wire Line
-	4100 12150 4100 12500
-Wire Wire Line
-	5000 12650 5350 12650
-Wire Wire Line
-	4400 12500 4400 12650
-Wire Wire Line
-	5350 12650 5650 12650
-Wire Wire Line
-	4550 12050 4550 12300
-Wire Wire Line
-	4850 12050 4850 12300
-Wire Wire Line
-	4550 12300 4550 12850
-Wire Wire Line
-	4850 12650 5000 12650
-Wire Wire Line
-	4850 12300 4850 12650
-Connection ~ 4300 8700
-Connection ~ 4300 8200
-Wire Wire Line
-	4300 8200 4300 8700
-Wire Wire Line
-	4600 8200 4600 8700
 Wire Notes Line
 	1050 900  4900 900 
 Wire Notes Line
@@ -1816,10 +1409,10 @@ Wire Wire Line
 Wire Wire Line
 	9600 5800 9600 5550
 $Comp
-L EEG_ADS1299_2-cache:GND-RESCUE-emg_circuit_2_ext_amp #PWR?
+L EEG_ADS1299_2-cache:GND-RESCUE-emg_circuit_2_ext_amp #PWR0101
 U 1 1 5CBADFE0
 P 9600 5900
-F 0 "#PWR?" H 9600 5900 30  0001 C CNN
+F 0 "#PWR0101" H 9600 5900 30  0001 C CNN
 F 1 "GND" H 9600 5830 30  0001 C CNN
 F 2 "" H 9600 5900 60  0000 C CNN
 F 3 "" H 9600 5900 60  0000 C CNN
@@ -1862,4 +1455,9 @@ Wire Wire Line
 Connection ~ 9700 6300
 Text Label 10050 6300 0    60   ~ 0
 AIN_BAT_DIV_VOLTAGE
+Wire Wire Line
+	9900 5000 10150 5000
+Connection ~ 9900 5000
+Text GLabel 10150 5000 2    50   Output ~ 0
+1.8V
 $EndSCHEMATC

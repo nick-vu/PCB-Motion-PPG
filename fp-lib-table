@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ICM-20948)(type Legacy)(uri ${KIPRJMOD}/libs/ICM-20948.mod)(options "")(descr ""))
+)
