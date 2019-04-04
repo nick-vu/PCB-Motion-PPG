@@ -244,7 +244,7 @@ F 3 "" H 23500 3600 50  0001 C CNN
 	1    23500 3600
 	0    1    1    0   
 $EndComp
-Text GLabel 23200 3700 3    60   Input ~ 0
+Text GLabel 23200 3700 0    60   Input ~ 0
 DGND
 Text Label 27350 4750 1    60   ~ 0
 SWDCLK
@@ -437,7 +437,7 @@ Text Label 24300 5100 2    60   ~ 0
 LED2
 Text Label 24300 5200 2    60   ~ 0
 LED3
-Text GLabel 24000 3800 3    60   Input ~ 0
+Text GLabel 24000 3800 0    60   Input ~ 0
 DGND
 Text Label 8750 10100 0    60   ~ 0
 SDI
@@ -569,7 +569,7 @@ F 3 "" H 9350 6300 50  0000 C CNN
 	1    9350 6300
 	0    -1   -1   0   
 $EndComp
-Text Label 23050 4150 2    60   ~ 0
+Text Label 22200 4050 0    60   ~ 0
 AIN_BAT_DIV_VOLTAGE
 $Comp
 L EEG_ADS1299_2-cache:CONN_2 P3
@@ -973,12 +973,6 @@ Wire Wire Line
 	10450 3450 10450 3550
 Connection ~ 10650 3450
 Wire Wire Line
-	24650 3950 23600 3950
-Wire Wire Line
-	23600 3950 23600 4150
-Wire Wire Line
-	23600 4150 23050 4150
-Wire Wire Line
 	24650 4350 24450 4350
 Wire Wire Line
 	24450 4350 24450 5100
@@ -990,12 +984,6 @@ Wire Wire Line
 	24550 5200 24550 4450
 Wire Wire Line
 	24550 4450 24650 4450
-Wire Wire Line
-	22200 3950 23400 3950
-Wire Wire Line
-	23400 3950 23400 3850
-Wire Wire Line
-	23400 3850 24650 3850
 Wire Wire Line
 	28200 3800 28200 4000
 Wire Wire Line
@@ -1313,8 +1301,6 @@ Wire Wire Line
 	8900 5600 9300 5600
 Text Label 7500 5800 2    60   ~ 0
 LOAD_IN
-Wire Wire Line
-	7500 5800 7700 5800
 Text Label 9300 5600 2    60   ~ 0
 LOAD_IN
 $Comp
@@ -1514,4 +1500,328 @@ Text GLabel 10800 9900 2    50   Input ~ 0
 1.8V
 Text GLabel 11150 12050 2    50   Input ~ 0
 1.8V
+$Comp
+L Device:C C5
+U 1 1 5CBCA18F
+P 7100 6000
+F 0 "C5" H 7100 6100 40  0000 L CNN
+F 1 "10uF" H 7106 5915 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7138 5850 30  0001 C CNN
+F 3 "~" H 7100 6000 60  0000 C CNN
+	1    7100 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5850 7100 5800
+Wire Wire Line
+	7100 5800 7700 5800
+Wire Wire Line
+	7100 6150 7100 6800
+Wire Wire Line
+	7100 6800 9700 6800
+Connection ~ 9700 6800
+Text Notes 7000 6150 1    50   ~ 0
+decoupling
+$Comp
+L SFH_7070:SFH_7070 IC1
+U 1 1 5CBF72BB
+P 1650 8550
+F 0 "IC1" H 2150 8815 50  0000 C CNN
+F 1 "SFH_7070" H 2150 8724 50  0000 C CNN
+F 2 "SFH7070" H 2500 8650 50  0001 L CNN
+F 3 "https://www.osram.com/media/resource/hires/osram-dam-2496467/SFH%207070.pdf" H 2500 8550 50  0001 L CNN
+F 4 "Osram Opto SFH 7070 Reflective Sensor" H 2500 8450 50  0001 L CNN "Description"
+F 5 "0.9" H 2500 8350 50  0001 L CNN "Height"
+F 6 "OSRAM Opto Semiconductors" H 2500 8250 50  0001 L CNN "Manufacturer_Name"
+F 7 "SFH 7070" H 2500 8150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "720-SFH7070" H 2500 8050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=720-SFH7070" H 2500 7950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1685232" H 2500 7850 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1685232" H 2500 7750 50  0001 L CNN "RS Price/Stock"
+	1    1650 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6001-OT U5
+U 1 1 5CBF7C95
+P 5350 8850
+F 0 "U5" H 5350 9000 50  0000 L CNN
+F 1 "MCP6001-OT" H 5350 8700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5250 8650 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5350 9050 50  0001 C CNN
+	1    5350 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CBF803C
+P 1650 9250
+F 0 "R2" V 1730 9250 50  0000 C CNN
+F 1 "12k" V 1650 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1580 9250 50  0001 C CNN
+F 3 "" H 1650 9250 50  0000 C CNN
+	1    1650 9250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5CBF8114
+P 1150 8800
+F 0 "C6" H 1175 8900 50  0000 L CNN
+F 1 "2.2uF" H 1150 8700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1188 8650 50  0001 C CNN
+F 3 "" H 1150 8800 50  0001 C CNN
+	1    1150 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 8750 3000 8750
+Wire Wire Line
+	2650 8550 3000 8550
+Wire Wire Line
+	3000 8550 3000 8650
+Wire Wire Line
+	1650 8750 1400 8750
+Wire Wire Line
+	1400 8550 1400 8750
+Connection ~ 1400 8750
+Wire Wire Line
+	1400 8750 1400 8950
+$Comp
+L Device:R R1
+U 1 1 5CC546C5
+P 1400 9100
+F 0 "R1" V 1480 9100 50  0000 C CNN
+F 1 "470" V 1400 9100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1330 9100 50  0001 C CNN
+F 3 "" H 1400 9100 50  0000 C CNN
+	1    1400 9100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 8650 3000 8650
+Connection ~ 3000 8650
+Wire Wire Line
+	3000 8650 3000 8750
+Text GLabel 6400 8000 2    60   Input ~ 0
+DVDD
+Wire Wire Line
+	5250 8550 5250 8000
+Wire Wire Line
+	5250 8000 6400 8000
+Connection ~ 5250 8000
+Wire Wire Line
+	5250 9150 5250 9700
+Text GLabel 6400 9700 2    60   Input ~ 0
+DGND
+Connection ~ 5250 9700
+Wire Wire Line
+	5250 9700 6400 9700
+Wire Wire Line
+	1650 8550 1400 8550
+Wire Wire Line
+	1150 8650 1150 8000
+Wire Wire Line
+	1150 8000 3000 8000
+Wire Wire Line
+	1150 8950 1150 9700
+Wire Wire Line
+	1150 9700 1400 9700
+Wire Wire Line
+	1400 9250 1400 9700
+Connection ~ 1400 9700
+Wire Wire Line
+	1550 8650 1650 8650
+$Comp
+L Device:C C7
+U 1 1 5CE8D3D6
+P 2000 9000
+F 0 "C7" H 2025 9100 50  0000 L CNN
+F 1 "4.7uF" H 2000 8900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2038 8850 50  0001 C CNN
+F 3 "" H 2000 9000 50  0001 C CNN
+	1    2000 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 9700 1650 9700
+Wire Wire Line
+	1650 9000 1850 9000
+Wire Wire Line
+	1650 9000 1650 9100
+Wire Wire Line
+	1650 9000 1550 9000
+Connection ~ 1650 9000
+Wire Wire Line
+	1550 8650 1550 9000
+Wire Wire Line
+	1650 9400 1650 9700
+Connection ~ 1650 9700
+Wire Wire Line
+	1650 9700 2250 9700
+$Comp
+L Device:C C8
+U 1 1 5CEF9069
+P 2250 9350
+F 0 "C8" H 2275 9450 50  0000 L CNN
+F 1 "4.7uF" H 2250 9250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2288 9200 50  0001 C CNN
+F 3 "" H 2250 9350 50  0001 C CNN
+	1    2250 9350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 9000 2250 9000
+Wire Wire Line
+	2250 9000 2250 9200
+Wire Wire Line
+	2250 9500 2250 9700
+Connection ~ 2250 9700
+Wire Wire Line
+	2250 9700 3650 9700
+$Comp
+L Device:C C9
+U 1 1 5CF3079C
+P 2500 9000
+F 0 "C9" H 2525 9100 50  0000 L CNN
+F 1 "4.7uF" H 2500 8900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2538 8850 50  0001 C CNN
+F 3 "" H 2500 9000 50  0001 C CNN
+	1    2500 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 9000 2250 9000
+Connection ~ 2250 9000
+$Comp
+L Device:C C10
+U 1 1 5CF4CD1D
+P 3000 9000
+F 0 "C10" H 3025 9100 50  0000 L CNN
+F 1 "2.2 uF" H 3000 8900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3038 8850 50  0001 C CNN
+F 3 "" H 3000 9000 50  0001 C CNN
+	1    3000 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5CF4CE3A
+P 5450 9350
+F 0 "R8" V 5530 9350 50  0000 C CNN
+F 1 "3.3M" V 5450 9350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5380 9350 50  0001 C CNN
+F 3 "" H 5450 9350 50  0000 C CNN
+	1    5450 9350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 9350 4850 9350
+Wire Wire Line
+	4850 9350 4850 8950
+Wire Wire Line
+	4850 8950 5050 8950
+Wire Wire Line
+	5600 9350 6300 9350
+Wire Wire Line
+	6300 9350 6300 8850
+Wire Wire Line
+	6300 8850 5650 8850
+Wire Wire Line
+	6300 8850 6550 8850
+Connection ~ 6300 8850
+Text Label 6550 8850 0    50   ~ 0
+ppg_amp_out
+$Comp
+L Device:R R3
+U 1 1 5CFA51D8
+P 3650 8400
+F 0 "R3" V 3730 8400 50  0000 C CNN
+F 1 "100k" V 3650 8400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3580 8400 50  0001 C CNN
+F 3 "" H 3650 8400 50  0000 C CNN
+	1    3650 8400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CFA5368
+P 3650 9150
+F 0 "R4" V 3730 9150 50  0000 C CNN
+F 1 "100k" V 3650 9150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3580 9150 50  0001 C CNN
+F 3 "" H 3650 9150 50  0000 C CNN
+	1    3650 9150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 9000 3650 9000
+$Comp
+L Device:R R6
+U 1 1 5D01E9EA
+P 4400 9350
+F 0 "R6" V 4480 9350 50  0000 C CNN
+F 1 "10k" V 4400 9350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4330 9350 50  0001 C CNN
+F 3 "" H 4400 9350 50  0000 C CNN
+	1    4400 9350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 9000 2750 9000
+Wire Wire Line
+	4850 9350 4550 9350
+Connection ~ 4850 9350
+Wire Wire Line
+	4250 9350 2750 9350
+Wire Wire Line
+	2750 9350 2750 9000
+Connection ~ 2750 9000
+Wire Wire Line
+	2750 9000 2850 9000
+Connection ~ 3650 9000
+Wire Wire Line
+	3650 9300 3650 9700
+Connection ~ 3650 9700
+Wire Wire Line
+	3650 9700 5250 9700
+Wire Wire Line
+	3650 8550 3650 9000
+Wire Wire Line
+	3650 9000 4600 9000
+Wire Wire Line
+	4600 9000 4600 8750
+Wire Wire Line
+	4600 8750 5050 8750
+Wire Wire Line
+	3650 8000 3650 8250
+Connection ~ 3650 8000
+Wire Wire Line
+	3650 8000 5250 8000
+Text Label 22200 4150 0    50   ~ 0
+ppg_amp_out
+Wire Wire Line
+	22200 3950 24500 3950
+Wire Wire Line
+	24500 3950 24500 3750
+Wire Wire Line
+	24500 3750 24650 3750
+Wire Wire Line
+	24650 3850 24550 3850
+Wire Wire Line
+	24550 3850 24550 4050
+Wire Wire Line
+	24550 4050 22200 4050
+Wire Wire Line
+	22200 4150 24600 4150
+Wire Wire Line
+	24600 4150 24600 3950
+Wire Wire Line
+	24600 3950 24650 3950
+Wire Wire Line
+	3000 8550 3000 8000
+Connection ~ 3000 8550
+Connection ~ 3000 8000
+Wire Wire Line
+	3000 8000 3650 8000
 $EndSCHEMATC

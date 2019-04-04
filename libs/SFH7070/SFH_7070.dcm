@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SFH_7070
+D Osram Opto SFH 7070 Reflective Sensor
+K
+F https://www.osram.com/media/resource/hires/osram-dam-2496467/SFH%207070.pdf
+$ENDCMP
+#
+#End Doc Library

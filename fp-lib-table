@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name ICM-20948)(type Legacy)(uri ${KIPRJMOD}/libs/ICM-20948.mod)(options "")(descr ""))
+  (lib (name SFH_7070)(type Legacy)(uri ${KIPRJMOD}/libs/SFH7070/SFH_7070.mod)(options "")(descr ""))
 )

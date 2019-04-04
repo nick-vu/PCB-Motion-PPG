@@ -7,4 +7,5 @@
   (lib (name emg_circuit_2_ext_amp-rescue)(type Legacy)(uri ${KIPRJMOD}/libs_tmp/emg_circuit_2_ext_amp-rescue.lib)(options "")(descr ""))
   (lib (name ICM-20948)(type Legacy)(uri ${KIPRJMOD}/libs/ICM-20948.lib)(options "")(descr ""))
   (lib (name tps62746)(type Legacy)(uri ${KIPRJMOD}/libs/UL_TPS62746YFPR/tps62746.lib)(options "")(descr ""))
+  (lib (name SFH_7070)(type Legacy)(uri ${KIPRJMOD}/libs/SFH7070/SFH_7070.lib)(options "")(descr ""))
 )
