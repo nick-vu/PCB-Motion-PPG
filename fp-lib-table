@@ -1,4 +1,7 @@
 (fp_lib_table
   (lib (name ICM-20948)(type Legacy)(uri ${KIPRJMOD}/libs/ICM-20948.mod)(options "")(descr ""))
   (lib (name SFH_7070)(type Legacy)(uri ${KIPRJMOD}/libs/SFH7070/SFH_7070.mod)(options "")(descr ""))
+  (lib (name BMI160)(type Legacy)(uri ${KIPRJMOD}/libs/BMI160/BMI160.mod)(options "")(descr ""))
+  (lib (name MAX30003CTI+)(type Legacy)(uri ${KIPRJMOD}/libs/MAX30003CTI+/MAX30003CTI+.mod)(options "")(descr ""))
+  (lib (name SSAJ120100)(type Legacy)(uri ${KIPRJMOD}/libs/SSAJ/SSAJ120100.mod)(options "")(descr ""))
 )

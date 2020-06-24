@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BMI160
+D IMUs - Inertial Measurement Units 6-Axis 950uA
+K
+F https://www.mouser.com/datasheet/2/783/BST-BMI160-DS000-07-1366203.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -8,4 +8,7 @@
   (lib (name ICM-20948)(type Legacy)(uri ${KIPRJMOD}/libs/ICM-20948.lib)(options "")(descr ""))
   (lib (name tps62746)(type Legacy)(uri ${KIPRJMOD}/libs/UL_TPS62746YFPR/tps62746.lib)(options "")(descr ""))
   (lib (name SFH_7070)(type Legacy)(uri ${KIPRJMOD}/libs/SFH7070/SFH_7070.lib)(options "")(descr ""))
+  (lib (name BMI160)(type Legacy)(uri ${KIPRJMOD}/libs/BMI160/BMI160.lib)(options "")(descr ""))
+  (lib (name MAX30003CTI+)(type Legacy)(uri ${KIPRJMOD}/libs/MAX30003CTI+/MAX30003CTI+.lib)(options "")(descr ""))
+  (lib (name SSAJ120100)(type Legacy)(uri ${KIPRJMOD}/libs/SSAJ/SSAJ120100.lib)(options "")(descr ""))
 )

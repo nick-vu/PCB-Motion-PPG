@@ -11,7 +11,7 @@ NetIExt=net
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=EEG_ADS1299_3.net
+LastNetListRead=lp_ecg.net
 PadDrill=0
 PadDrillOvalY=0
 PadSizeH=0.5
